@@ -24,10 +24,12 @@ String actualUrl = driver.getCurrentUrl();
         //Navigate Method
 
         driver.navigate().refresh();
-        driver.navigate().to("https://www.youtube.com/");
+        driver.get("https://www.youtube.com/");
         //Thread.sleep(3000);
 
-        driver.navigate().to("https://www.youtube.com/watch?v=JFm7YDVlqnI");
+        driver.get("https://www.facebook.com/");
+        //Thread.sleep(3000);
+        driver.get("https://cybertekschool.com/");
         //Thread.sleep(3000);
       String source =   driver.getPageSource();
         System.out.println("source = " + source);//Return Inspect of our Page
