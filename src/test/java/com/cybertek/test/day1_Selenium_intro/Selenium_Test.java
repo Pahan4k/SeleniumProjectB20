@@ -11,7 +11,7 @@ public class Selenium_Test {
         driver.manage().window().maximize();
 
         driver.get("https://www.google.com");
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
 
         //getTittle
 String actualTittle = driver.getTitle();
