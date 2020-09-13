@@ -1,5 +1,6 @@
 package com.cybertek.test.day5_TestNg;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -36,6 +37,21 @@ public class TestNg_Intro {
 @Test
     public void test2(){
         System.out.println("Test 2 is running");
+    }
+
+    @Test
+    public void test3(){
+    String str1 = "TestNG";
+    String str2 = "TestNG";
+    String str3 = "sfdsasd";
+
+         Assert.assertTrue(str1.equals(str2));
+
+         Assert.assertTrue(str1.equals(str3), "Str 1 is not equal Str3");
+
+
+
+
     }
 
 }

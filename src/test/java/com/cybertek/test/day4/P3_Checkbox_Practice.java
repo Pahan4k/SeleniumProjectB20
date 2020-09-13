@@ -17,7 +17,6 @@ public class P3_Checkbox_Practice {
         //1st checkbox
         WebElement checkBox1 = driver.findElement(By.xpath("//form[@id='checkboxes']/input[1]"));
 
-
         //2nd checkbox
         WebElement checkBox2 = driver.findElement(By.xpath("//form[@id='checkboxes']/input[2]"));
         if (!checkBox1.isSelected()){
